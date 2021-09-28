@@ -206,6 +206,9 @@ class Cache implements QueueInterface
         /** @var Message $message */
         $message = $this->findByMessageId($messageId);
         if($message){
+            $cacheIdentifier = $this->getCacheIdentifier($message);
+            $this->messageCache->remove($cacheIdentifier);
+
             $noReleases = $message->getNumberOfReleases();
             $payload = $message->getPayload();
 
@@ -227,6 +230,9 @@ class Cache implements QueueInterface
         /** @var Message $message */
         $message = $this->findByMessageId($messageId);
         if($message) {
+            $cacheIdentifier = $this->getCacheIdentifier($message);
+            $this->messageCache->remove($cacheIdentifier);
+
             $noReleases = $message->getNumberOfReleases();
             $payload = $message->getPayload();
 

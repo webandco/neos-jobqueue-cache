@@ -28,7 +28,7 @@ Flowpack:
     Common:
       queues:
         SomeQueueName:
-          className: 'Webandco\CacheQueue\Queue\Cache'
+          className: 'Webandco\JobQueue\Cache\Queue\Cache'
           executeIsolated: true
           options:
             defaultTimeout: 50
