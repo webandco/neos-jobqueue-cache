@@ -1,0 +1,9 @@
+Webandco\JobQueue\Cache\Queue\Cache:
+  properties:
+    messageCache:
+      object:
+        factoryObjectName: Neos\Flow\Cache\CacheManager
+        factoryMethodName: getCache
+        arguments:
+          1:
+            value: Webandco_JobQueue_Cache_MessageCache

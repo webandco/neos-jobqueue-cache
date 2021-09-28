@@ -1,0 +1,19 @@
+{
+  "name": "webandco/neos-jobqueue-cache",
+  "type": "neos-package",
+  "description": "Cache based implementation of the flowpack/jobqueue interface",
+  "require": {
+    "neos/flow": "*",
+    "flowpack/jobqueue-common": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Webandco\\JobQueue\\Cache\\": "Classes"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Webandco.JobQueue.Cache"
+    }
+  }
+}

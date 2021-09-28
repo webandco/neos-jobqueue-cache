@@ -1,0 +1,3 @@
+Webandco_JobQueue_Cache_MessageCache:
+  frontend: Neos\Cache\Frontend\VariableFrontend
+  persistent: true
